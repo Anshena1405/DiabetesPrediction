@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MedScan Diagnostics - Diabetes Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="report-container">
+        <h1>🏥 MedScan Diagnostics</h1>
+        <h2>🧾 Diabetes Prediction Report</h2>
+        <hr>
+
+        <div class="card">
+            <p><strong>👤 Patient Name:</strong> {{ name }}</p>
+            <p><strong>📅 Age:</strong> {{ values['Age'] }}</p>
+        </div>
+
+        <h3>📋 Entered Medical Details:</h3>
+        <table>
+            {% for key, value in values.items() %}
+                {% if key != 'Age' %}
+                <tr>
+                    <td><strong>{{ key }}</strong></td>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+
+        <h3>🩺 Diagnosis Result:</h3>
+        <div class="result-box {{ 'diabetic' if result == 'Diabetic' else 'nondiabetic' }}">
+            {{ result }}
+        </div>
+
+        <h3>📈 Risk Level:</h3>
+        <div class="risk-meter">
+            <div class="bar {{ 'high' if result == 'Diabetic' else 'low' }}"></div>
+        </div>
+
+        <p class="note">⚠️ This is a predictive report. Please consult a licensed physician for medical advice.</p>
+    </div>
+</body>
+</html>

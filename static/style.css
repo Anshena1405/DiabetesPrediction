@@ -1,0 +1,130 @@
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef6ff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+h1, h2 {
+    text-align: center;
+    color: #0056b3;
+}
+
+/* Form container */
+.form-container {
+    max-width: 600px;
+    background: #ffffff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Report Page Styles (from earlier) */
+.report-container {
+    max-width: 700px;
+    background: #fff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.card {
+    background-color: #f1f9ff;
+    padding: 15px;
+    border-left: 5px solid #007BFF;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.result-box {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.result-box.diabetic {
+    background-color: #ffe6e6;
+    color: #d8000c;
+    border: 2px solid #d8000c;
+}
+
+.result-box.nondiabetic {
+    background-color: #e6ffe6;
+    color: #006600;
+    border: 2px solid #006600;
+}
+
+.risk-meter {
+    background: #ddd;
+    height: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.risk-meter .bar {
+    height: 100%;
+    transition: width 0.6s ease-in-out;
+}
+
+.bar.high {
+    background: #d8000c;
+    width: 85%;
+}
+
+.bar.low {
+    background: #006600;
+    width: 25%;
+}
+
+.note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 30px;
+    text-align: center;
+}
