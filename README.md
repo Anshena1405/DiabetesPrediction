@@ -13,13 +13,6 @@ This is a Machine Learning web application that predicts whether a patient is di
 - HTML, CSS
 - Trained on PIMA Indians Diabetes Dataset
 
-## 📦 How to Run
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/diabetes-prediction-app.git
-cd diabetes-prediction-app
 
 ## 📸 Screenshots
 
@@ -29,5 +22,4 @@ cd diabetes-prediction-app
 ### 🔹 Prediction Result Page
 <img src="assets/DiabetesReport.png" width="600"/>
 
-### 🔹 Model Feature Importance (Optional)
 <img src="assets/NonDiabetesReport.png" width="600"/>
